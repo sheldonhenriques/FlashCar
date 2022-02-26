@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>registration</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+ 
+ <style>
+body {
+    background-image: url("img/back.png");
+	background-repeat: no-repeat;
+}
+</style>
+   
+<script language="javascript" value="text/javascript">
+		<!--
+			function validateForm()
+			{
+				var x = document.forms["myform"]["username"].value;
+				if (x== "")
+				{
+					alert("Please enter your name");
+					return false;
+				}
+				var y = document.forms["myform"]["t2"].value;
+				if (y== "")
+				{
+					alert("Please enter your last name");
+					return false;
+				}
+				var a = document.forms["myform"]["t3"].value;
+				if (a== "")
+				{
+					alert("please enter  your comapny name");
+					return false;
+				}
+				var a = document.forms["myform"]["t4"].value;
+				if (a== "")
+				{
+					alert("please enter your email address");
+					return false;
+				}
+				var b = document.forms["myform"]["t5"].value;
+				if (b== "")
+				
+				{
+					alert("please enter your postal code");
+					return false;
+				}
+				var m = document.forms["myform"]["t6"].value;
+				if (b== "")
+				
+				{
+					alert("please enter contact");
+					return false;
+				}var q = document.forms["myform"]["t7"].value;
+				if (b== "")
+				
+				{
+					alert("please enter contact");
+					return false;
+				}
+			}
+		//-->
+	</script>
+   
+
+</head>
+<form name="myform" form action="php/sign.php" onsubmit="return validateForm()" method="post">
+<body>
+
+<header>
+  <img src="img/logo.jpeg" width="300px" height="70px">
+  <div class="handle">Menu</div>
+
+
+
+<nav>
+ <ul class="hiding">
+  <li><a href="index.html" >Home</a></li>
+  <li><a href="about.html" >About Us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="cars.html">Cars</a></li>
+  <li><a href="loginclient.html">Login</a></li>
+ </ul>
+</nav>
+</header>
+
+ 
+
+<h1 style="color:black; text-align:center; background:grey">SIGN UP</h1>
+
+<div id="forms">
+<form>
+<label>FIRST NAME</label><br><input type="text" name="username" size="50" value=""><br><br>
+<label>LAST NAME</label><br><input type="text" name="t2" size="50" value=""><br><br>
+<label>EMAIL ADDRESS</label><br><input type="text" name="t4" size="50" value=""><br><br>
+<label>ADDRESS</label><br><textarea rows="3" cols="50"></textarea><br><br>
+<label>STATE :</label>
+<select name="state">
+<option value="MAHARASHTRA">MAHARASHTRA</option>
+<option value="KERALA">KERALA</option>
+<option value="GUJARAT">GUJARAT</option>
+<option value="KARNATAK">KARNATAK</option>
+</select><br><br>
+<label>CITY :</label>
+<select name="city">
+<option value="MUMBAI">MUMBAI</option>
+<option value="CHENNAI">CHENNAI</option>
+<option value="AHEMDABAD">AHEMDABAD</option>
+<option value="BANGLORE">BANGLORE</option>
+</select><br><br>
+<label>POSTAL CODE</label><br>
+<input type="text" name="t5" ><br><br>
+<label>Gender </label><br>  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other<br><br>
+ <label>Car Type </label><br>  <input type="checkbox" name="Sedan" value="Sedan">Sedan 
+<input type="checkbox" name="SUV" value="SUV">SUV 
+<input type="checkbox" name="Compact" value="Compact">Compact 
+<input type="checkbox" name="Luxury" value="Luxury">Luxury 
+<br><br>
+<label>MOBILE NO</label><br><input type="text" name="t7" ><br><br>
+<label>PASSWORD</label><br><input type="PASSWORD" name="password" value="" size="50"><br><br>
+<label>CONFIRM PASSWORD</label><br><input type="PASSWORD" name="pass1" value="" size="50"><br><br>
+<label>Upload Licence:</label>  <input type="file" name="myFile"><br><br>
+<input type="submit" name="submit" value="Sign Up" />
+</form>
+
+</div><br><br><br>
+ <div class="wheel">   <img src="img/wheel.png" width="300" height="300"></div>  
+<footer class="footer-distributed">
+
+			
+			<div class="footer-right">
+
+				<a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+				<a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+				<a href="www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+				
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="about.html">About</a>
+					·
+					<a href="users.html">Users</a>
+				</p>
+
+				<p>Flash Cars &copy; 2018</p>
+			</div>
+
+		</footer>
+</body>
+</html>

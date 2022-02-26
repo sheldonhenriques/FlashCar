@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<header>
+  <img src="img/logo.jpeg" width="300" height="70">
+  <div class="handle">Menu</div>
+
+
+
+<nav>
+ <ul class="hiding">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#this" >About Us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="cars.html">Cars</a></li>
+  <li><a href="register.html">Sign Up</a></li>
+ </ul>
+</nav>
+</header>
+
+<img src="img/compact.jpg" style="width:720px ;display: block;
+    margin-left: auto;
+    margin-right: auto;
+}" >
+
+
+<button onclick="getLocation()" style="width:400px ;display: block;
+    margin-left: auto;
+    margin-right: auto;
+}"><h2>Where to find us</h2></button>
+
+<div id="mapholder" style="width:400px ;display: block;
+    margin-left: auto;
+    margin-right: auto;
+}"></div>
+
+<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30136.462283880617!2d72.84008462681388!3d19.236313217738925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1210a06cc21%3A0x1163316e2af61d25!2sDream+Sports+Fields%2C+Borivali!5e0!3m2!1sen!2sin!4v1536483877650" width="350" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div style="width: 100%"><iframe width="100%" height="600" src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Create a custom Google Map</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe></div><br />-->
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+			 
+			<!-- End banner Area -->	
+<br><br><br>
+			<!-- Start home-about Area -->
+			<div id="bottom-content">
+				
+							<h3>Globally Connected 
+							by Large Network</h3>
+							<p>
+								We are here to listen from you deliver exellence
+							</p>
+							<p>
+							 The provide with the new and convinent way to travel
+							</p>
+							
+			</div>
+			<!-- End home-about Area -->	
+
+			<br><br><br>
+			<!-- Start reviews Area -->
+
+			
+			<h1 >Experienced Mentor Team</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+
+
+			<div id="bottom-content">
+
+			<section class="bottom">
+			<img  src="img/shaun.jpg" alt="">
+						        
+								<div >
+							    <h4>Shaun lewis</h4>
+							    <p>Managing Director (Sales)</p>									    	
+						    </div>
+			</section>
+		
+		<section class="bottom">
+			<img  src="img/shel.jpg" alt="">
+						        
+								<div >
+							    <h4>Sheldon henriques</h4>
+							    <p>CEO</p>									    	
+						    </div>
+			</section>
+
+			<section class="bottom">
+			<img  src="img/anuj.jpg" alt="">
+						        
+								<div >
+							    <h4>Anuj badale</h4>
+							    <p>Web Designer</p>									    	
+						    </div>
+			</section>
+			</div>	
+				
+
+				
+
+
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
+			<!-- End reviews Area -->
+
+			
+<footer class="footer-distributed">
+
+			
+			<div class="footer-right">
+
+				<a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+				<a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+				<a href="www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+				
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="#this">About</a>
+					·
+					<a href="cardb.html">Cars</a>
+				</p>
+
+				<p>Flash Cars &copy; 2018</p>
+			</div>
+
+		</footer>
+			<!-- End footer Area -->		
+
+		</body>
+	</html>

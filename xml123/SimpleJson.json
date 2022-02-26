@@ -1,0 +1,20 @@
+﻿[
+   {
+      "time": "Mon-fri",
+      "sunny": "175",
+      "xcent": "190",
+      "verna": "190"
+   },
+   {
+      "time": "Sat-Sun",
+      "sunny": "315",
+      "xcent": "330",
+      "verna": "350"
+   },
+   {
+      "time": "Peak Hours",
+      "sunny": "325",
+      "xcent": "350",
+      "verna": "375"
+   }
+]

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="SimpleXml4.xsl"?>
+ <Cars>
+<Car-Details>
+<time>Mon-wed</time>
+<sunny>175</sunny>
+<xcent>190</xcent>
+<verna>190</verna>
+</Car-Details>
+<Car-Details>
+<time>wed-fri</time>
+<sunny>315</sunny>
+<xcent>330</xcent>
+<verna>350</verna>
+</Car-Details>
+<Car-Details>
+<time>fri-sat</time>
+<sunny>170</sunny>
+<xcent>325</xcent>
+<verna>375</verna>
+</Car-Details>
+<Car-Details>
+<time>sat-sun</time>
+<sunny>325</sunny>
+<xcent>350</xcent>
+<verna>375</verna>
+</Car-Details>
+<Car-Details>
+<time>Peak Hours</time>
+<sunny>475</sunny>
+<xcent>350</xcent>
+<verna>375</verna>
+</Car-Details>
+</Cars>

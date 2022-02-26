@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><head>
+<link rel="stylesheet" href="css/main.css">
+
+
+	<style type="text/css">
+	
+	body
+	{
+		margin:0;
+		padding:0;
+		font-family:sans-serif;
+		background:url(img/back.png);
+		background-repeat: repeat;
+		background-size: cover;
+	}
+
+	
+	.clearflaot
+	{
+		clear:both;
+	}
+	#bottom2{
+		width:220px;
+		margin:0 auto;
+		background-color:black;
+		position:relative;
+		top:200px;
+	}
+	
+	
+	
+	</style>
+	
+
+	<title>LOGIN</title>
+</head>
+<body>
+	<header>
+  <img src="img/logo.jpeg" max-width="300" height="70">
+  <div class="handle">Menu</div>
+
+
+
+<nav>
+ <ul class="hiding">
+  <li><a href="index.html" >Home</a></li>
+  <li><a href="about.html" >About Us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="cars.html">Cars</a></li>
+  <li><a href="register.html">Sign Up</a></li>
+  
+ </ul>
+</nav>
+</header>
+
+
+	<div class="clearflaot"></div>
+	<div id="bottom2">
+		<form align="center" action="php/logins.php" method="post">
+<table cellspacing="20" align="center" >
+	<tr>
+	<th>
+		<img src="img/loginlogo.png" id="loginlogo" style=" width:50px; height:50px">
+		</tr>
+	</th>
+	<tr>
+		<td>
+		User Name: <input type="text" name="username" placeholder="Username" required />
+		</td>
+	 
+	</tr>
+	
+	<tr>
+		<td>
+			
+		
+		Password:<input type="password" name="password" placeholder="Password" required />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+		
+		Password:<input type="password" name="passwordnew" placeholder="New Password" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+		<input type="checkbox" name="remember" /> Remember me
+		
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+		
+		<input type="submit" name="login" value="login" >
+		<input type="submit" name="delete" value="delete" >
+		<input type="submit" name="update" value="update" >
+
+		</td>
+	</tr>
+	
+	
+	</table>
+	</form>
+		
+		</div>
+	
+</body>
+</html>
